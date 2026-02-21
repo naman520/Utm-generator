@@ -30,7 +30,7 @@ export default function App() {
     const medium = mode === "bio" ? "bio" : "social";
     const campaign = mode === "bio" ? "bio_link" : slugify(postTitle) || "post";
     const cleanBase = siteUrl.replace(/\/$/, "");
-    return `${cleanBase}?utm_source=${selectedPlatform.utm}&utm_medium=${medium}&utm_campaign=${campaign}`;
+    return `${cleanBase}?utm_source=${selectedPlatform.utm}&utm_medium=organic&utm_campaign=${campaign}`;
   }
 
   const generatedLink = generateLink();
